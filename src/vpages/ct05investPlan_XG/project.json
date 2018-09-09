@@ -1,0 +1,27 @@
+{
+  "name": "投资计划分享页",
+  "value": "ct05investPlan_XG",
+  "directory": "ct05investPlan_XG",
+  "version": "",
+  "title": "投资计划分享页",
+  "project": {
+    "ct05investPlan_XG": "./src/vpages/ct05investPlan_XG"
+  },
+  "port": "9021",
+  "dev": {
+    "domain": "\"http://192.168.29.67:9001\"",
+    "bucket": "jyxghddev"
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jyxghdpre"
+  },
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jyxghdbeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jyxghdpro"
+  }
+}

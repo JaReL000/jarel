@@ -1,0 +1,29 @@
+{
+  "name": "鲸鱼选股",
+  "value": "LXGQJINRXUANGU",
+  "directory": "lxgqjinrxuangu",
+  "version": "",
+  "title": "每天必送1支短线牛股",
+  "project": {
+    "lxgqjinrxuangu": "./src/vpages/lxgqjinrxuangu"
+  },
+  "port": "9530",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jyxghddev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jyxghdpro"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

@@ -1,0 +1,29 @@
+{
+  "name": "有球必应 有投必送",
+  "value": "CTGQINVESTGIVE",
+  "directory": "ctgqinvestgive",
+  "version": "",
+  "title": "有球必应 有投必送",
+  "project": {
+    "ctgqinvestgive": "./src/vpages/ctgqinvestgive"
+  },
+  "port": "9860",
+  "dev": {
+    "domain": "\"http://jract.dev.jingyugame.com\"",
+    "bucket": "jinrfedev" 
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  }, 
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jinrfe"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

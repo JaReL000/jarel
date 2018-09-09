@@ -1,0 +1,27 @@
+{
+  "name": "baiGeBao",
+  "value": "INSURANCE",
+  "directory": "insurance",
+  "version": "",
+  "title": "臻爱-百万医疗保险",
+  "project": {
+    "insurance": "./src/vpages/insurance"
+  },
+  "port": "9017",
+  "dev": {
+    "domain": "\"http://121.43.119.235:7185\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://114.55.248.207:7185\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://bgbapi.jinr.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://bgbapi.jinr.com\"",
+    "bucket": "jinrfe"
+  }
+}

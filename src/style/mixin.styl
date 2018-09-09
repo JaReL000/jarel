@@ -1,0 +1,114 @@
+/*  stylus 文档
+*   ===============================
+*   ===============================
+*/
+
+@import "./variable.styl"
+
+
+// 主色
+mainColor   = #0c72e3
+// 默认字体颜色
+wordDfColor = #333333
+// 次字体颜色
+wordSecondColor = #cccccc
+// banner图背景
+linearGradient= linear-gradient(#1589c8 10%, #3068b1 70%, #3a60ab)
+// M新站banner图背景
+mlinearGradient= linear-gradient(#176FAC, #194580)
+// side图背景
+linearGradientSide = linear-gradient(-225deg, #0f2169 20%, #0d3e7f 60%, #0a6991)
+baise = #fff
+
+huise = #a7a7a7
+
+huise9 = #999999
+
+qqqq = #a7a7a7
+
+// mColor = #156dab 
+// xxoo =  #155e9a
+// banner颜色一致 #155e9a
+mColor = #0c72e3 
+appColor = #0c72e3
+
+
+
+//mainColor   = #0089dc
+//wordDfColor = #666
+//wordSecondColor = #999
+//linearGradient= linear-gradient(#0af, #0085ff)
+
+/**
+ * px -> rem  ceil() floor() round()
+ * $px 实际像素
+ * $num 保留几位小数
+ * $rfs 根font-size
+ * 实际输出
+ */
+rem($px, $num = 4, $rfs = 75)
+  $rem = $px/$rfs
+  floor($rem, $num)rem
+
+// 四舍五入
+rem0($px, $num = 4, $rfs = 75)
+  $rem = $px/$rfs
+  round($rem, $num)rem
+
+typeface(lh, f, col)
+  line-height rem(lh)
+  font-size rem(f)
+  color col
+
+border-1px($color)
+  position: relative
+  &:after
+    display: block
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 100%
+    border-bottom 1px /*no*/ solid $color 
+    content: ''
+
+indicator()
+  position: relative
+  &:after
+    position: absolute;
+    top rem(40)
+    right rem(40)
+    content: " ";
+    display: inline-block;
+    height rem(16)
+    width @height
+    border-width: 4px 4px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+
+border1px($color = #e5e5e5)
+  position: relative
+  &:before
+    content ''
+    position absolute
+    height 1px
+    width 100%
+    bottom 0
+    right 0
+    background-color: $color 
+    transform:scaleY(0.5)
+    -webkit-transform:scaleY(0.5); 
+
+boder-none()
+  &:after
+    display: none
+
+
+
+
+
+
+
+
+
+

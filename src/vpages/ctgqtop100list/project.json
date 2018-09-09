@@ -1,0 +1,29 @@
+{
+  "name": "5月百强榜活动",
+  "value": "CTGQTOP100LIST",
+  "directory": "ctgqtop100list",
+  "version": "",
+  "title": "5月百强榜",
+  "project": {
+    "ctgqtop100list": "./src/vpages/ctgqtop100list"
+  },
+  "port": "9862",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

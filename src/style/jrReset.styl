@@ -1,0 +1,388 @@
+@charset "utf-8"
+@import "mixin"
+/*
+ * @project jr-reset
+ * @author 7043 weizihua
+ * Style Reset
+ * Mobile Terminal
+ * Date: 2017-5-8
+ */
+
+html
+  color #000
+  overflow-y scroll
+  -webkit-text-size-adjust 100%
+  -ms-text-size-adjust 100%
+
+html *
+  outline none  /* 0也可以*/
+  -webkit-text-size-adjust none
+  -webkit-tap-highlight-color transparent
+
+html, body
+  //使用无衬线字体 Sans Serif
+  font-family   "Helvetica Neue", Helvetica, STHeiTi, sans-serif
+  /*! 禁止选中文本*/
+  -webkit-user-select none
+  user-select none
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+article, aside, blockquote, body, button, code,
+dd, details, div, dl, dt, fieldset, figcaption, figure,
+footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr,
+input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul
+  margin 0
+  padding 0
+
+input, select, textarea
+  font-size: 100%
+
+/* 去掉各 Table  cell 的边距并让其边重合 */
+table
+  border-collapse collapse
+  border-spacing 0
+
+/* 去除默认边框 */
+fieldset, img
+  border 0
+
+/* 去掉 firefox 下此元素的边框 */
+abbr, acronym
+  border 0
+  font-variant normal
+
+/* 一致的 del 样式 */
+del
+  text-decoration line-through
+
+address, caption, cite, code, dfn, em, th, var
+  font-style normal
+  font-weight 500
+
+/* 去掉列表前的标识, li 会继承 */
+ol, ul
+  list-style none
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th
+  text-align left
+
+/* 来自 yahoo, 让标题都自定义, 适应多个系统应用 */
+h1, h2, h3, h4, h5, h6
+  font-size 100%
+  font-weight 500
+
+q:after, q:before
+  content ''
+
+/* 统一上标和下标 */
+sub, sup
+  font-size 75%
+  line-height 0
+  position relative
+  vertical-align baseline
+
+sup
+  top -.5em
+
+sub
+  bottom -.25em
+
+/* 鼠标悬停 */
+a:hover
+  text-decoration underline
+  text-decoration none
+
+/* 默认不显示下划线，保持页面简洁 */
+a, ins
+  text-decoration none
+
+i
+  font-style normal
+
+input
+  border none
+  /*compatible ios上按钮的圆角*/
+  -webkit-appearance none
+  /*compatible ios上输入框圆角*/
+  border-radius 0
+  
+
+/*去掉webkit默认的表单样式*/
+button, input, optgroup, select, textarea
+  -webkit-appearance none
+
+/*禁止长按链接与图片弹出菜单*/
+a, img
+  -webkit-touch-callout none
+
+/*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+a, button, input, optgroup, select, textarea
+  -webkit-tap-highlight-color rgba(0,0,0,0)
+
+/*修改webkit中input的planceholder样式*/
+input::-webkit-input-placeholder
+  color:#ccc;
+
+/*修改webkit中focus状态下input的planceholder样式*/
+input:focus::-webkit-input-placeholder
+  // color #f00
+  color #ececec
+
+/*隐藏Android的语音输入按钮*/
+input::-webkit-input-speech-button
+  display none
+
+
+/******************* 自用样式 ***************************/
+.fixed
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+
+.jr-left
+  float left 
+  
+.jr-right
+  float right
+
+// app使用
+// img 
+//   height 100% 
+//   width 100%
+
+/******************* 自用样式y ***************************/
+/*一像素解决方案*/
+.border-right-1px, 
+.border-bottom-1px
+  position: relative
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    transform-origin: 0 0
+  
+.border-top-1px,   
+.border-left-1px
+  position: relative
+  &:before
+    content: ""
+    display: block
+    position: absolute
+    transform-origin: 0 0
+
+.border-top-1px
+  &:before
+    border-top: 1px solid $color-row-line
+    left: 0
+    top: 0
+    width: 100%
+    transform-origin: 0 top
+
+.border-right-1px
+  &:after
+    border-right: 1px solid $color-row-line
+    top: 0
+    right: 0
+    height: 100%
+    transform-origin: right 0
+
+.border-bottom-1px
+  &:after
+    border-bottom: 1px solid $color-row-line
+    left: 0
+    bottom: 0
+    width: 100%
+    transform-origin: 0 bottom
+
+.border-left-1px
+  &:before
+    border-left: 1px solid $color-col-line
+    top: 0
+    left: 0
+    height: 100%
+    transform-origin: left 0
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2)
+  .border-top-1px
+    &:before
+      width: 200%
+      transform: scale(.5) translateZ(0)
+  .border-right-1px
+    &:after
+      height: 200%
+      transform: scale(.5) translateZ(0)
+  .border-bottom-1px
+    &:after
+      width: 200%
+      transform: scale(.5) translateZ(0)
+  .border-left-1px
+    &:before
+      height: 200%
+      transform: scale(.5) translateZ(0)
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3)
+  .border-top-1px
+    &:before
+      width: 300%
+      transform: scale(.333) translateZ(0)
+  .border-right-1px
+    &:after
+      height: 300%
+      transform: scale(.333) translateZ(0)
+  .border-bottom-1px
+    &:after
+      width: 300%
+      transform: scale(.333) translateZ(0)
+  .border-left-1px
+    &:before
+      height: 300%
+      transform: scale(.333) translateZ(0)
+
+
+/******************* Media query ***************************/
+/**
+ * Media query iphone ipad pc
+ *
+ */
+/*竖屏*/
+// @media screen and (orientation : portrait)
+//   body
+//     &>div
+//       width auto
+//       margin 0 auto
+
+
+// /*横屏时字体红色*/
+// @media screen and (orientation : landscape)
+//   body
+//     &>.daohang
+//       height 1rem
+//       text-align center
+//       font-size (@height/2)
+//       line-height @height
+//       background-color #333333
+//       color red
+
+// /******
+//   ipad
+//  */
+// /* ipad横屏 */
+// @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)
+//   body
+//     &>.daohang
+//       color yellow
+
+// /* ipad竖屏 */
+// @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+//   body
+//     &>div
+//       width auto
+//       margin 0 auto
+//     &>.daohang
+//       color blue
+
+/******************* Media query ***************************/
+
+.no-data
+  &>img 
+    width 40%
+  &>p  
+    font-size 34px
+    color #999
+
+/**
+ * 适配iphoneX
+ * 
+ * <meta 
+ * name="viewport" 
+ * content="
+ *   width=device-width,
+ *   initial-scale=1.0, 
+ *   minimum-scale=1.0, 
+ *   maximum-scale=1.0, 
+ *   user-scalable=no, 
+ *   viewport-fit=cover
+ * ">
+ * 在iOS 11中的WebKit包含了一个新的CSS函数constant()
+ */
+body {
+  padding-top: constant(safe-area-inset-top);   //为导航栏+状态栏的高度 88px        
+  padding-left: constant(safe-area-inset-left);   //如果未竖屏时为0                
+  padding-right: constant(safe-area-inset-right); //如果未竖屏时为0                
+  padding-bottom: constant(safe-area-inset-bottom);//为底下圆弧的高度 34px       
+}
+
+.share .fixed-x {
+  padding-bottom 100px !important
+}
+.share .fixed-x  {
+  background-size  center 66% !important;
+}
+// 注意这里采用的是690px(safe area高度)，不是812px;
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+    /*导航操作栏上移*/
+    .fixed-x {
+      // bottom: 44px !important;
+      padding-bottom rem(44) !important
+    }
+    .fixed-xm {
+      padding-bottom 14px !important
+    }
+    .iphone-xms {
+      -webkit-overflow-scrolling: auto !important
+    }
+
+    .bottom-x {
+      padding-bottom 44px !important
+    }
+    .footer-x{
+      padding-bottom 25px !important
+      background-color #fff
+    }
+    .main-x{
+      bottom: 90px !important;
+    }
+
+    .fixed-x .content {
+      background-size  center 76% !important;
+    }
+
+    .share .fixed-x {
+      padding-bottom 100px !important
+    }
+    .share .fixed-x  {
+      background-size  center 66% !important;
+    }
+        
+}
+
+/**
+ * 适配title
+ *
+ *
+ */
+
+html 
+  body 
+    .dev, .pord, .jyd
+      .jrx-header-top
+        top rem(88)
+      &>div.x-header-top
+        padding-top rem(88)
+      div.x-header-potop
+        padding-top rem(0)
+        top rem(88)
+      &>.x-header 
+        width:100%;
+        position:fixed; 
+        // position: absolute;
+        left:0;
+        top:0;
+        z-index:100;
+    

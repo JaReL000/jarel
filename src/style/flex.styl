@@ -1,0 +1,27 @@
+/*
+ |--------------------------------------------------------------------------
+ | stylus flex
+ |--------------------------------------------------------------------------
+ |  IE10部分支持2012，需要-ms-前缀
+ |  Android4.1/4.2-4.3部分支持2009 ，需要-webkit-前缀
+ |  Safari7/7.1/8部分支持2012， 需要-webkit-前缀
+ |  IOS Safari7.0-7.1/8.1-8.3部分支持2012，需要-webkit-前缀
+ |
+ |
+ */
+
+jr-flex($jc)
+  display box /* OLD - Android 4.4- */
+  display -webkit-box  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* 老版本语法: Firefox 19- (buggy but mostly works) */
+  display -moz-box
+  /* 混合版本语法: TWEENER - IE 10 */
+  display -ms-flexbox
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  display flex
+  /* 新版本语法: Chrome 21+ */
+  display -webkit-flex;
+
+
+
+

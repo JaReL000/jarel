@@ -1,0 +1,27 @@
+{
+  "name": "PC-大客户版本(年定期)",
+  "value": "PCVIP",
+  "directory": "pc",
+  "version": "",
+  "title": "鲸鱼",
+  "project": {
+    "pcvip": "./src/views/pcvip"
+  },
+  "port": "8974",
+  "dev": {
+    "domain": "\"http://jinrpc.dev.jinr.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jinrpc.pre.jinr.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jinrpc.beta.jinr.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jinr.com\"",
+    "bucket": "jinrfe"
+  }
+}

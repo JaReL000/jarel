@@ -1,0 +1,29 @@
+{
+  "name": "端午父亲节活动node",
+  "value": "CTGQDUANWU",
+  "directory": "ctgqduanwu",
+  "version": "",
+  "title": "当父亲节遇上端午节",
+  "project": {
+    "ctgqduanwu": "./src/vpages/ctgqduanwu"
+  },
+  "port": "9630",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

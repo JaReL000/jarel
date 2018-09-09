@@ -1,0 +1,27 @@
+{
+  "name": "鲸鱼财富-年度报告",
+  "value": "REPORT",
+  "directory": "report",
+  "version": "",
+  "title": "鲸鱼财富",
+  "project": {
+    "report": "./src/views/report"
+  },
+  "port": "9894",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

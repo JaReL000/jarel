@@ -1,0 +1,29 @@
+{
+  "name": "投资返现3.0",
+  "value": "CTGQINVESTRETURN3",
+  "directory": "ctgqinvestreturn3",
+  "version": "",
+  "title": "年中冲刺，狂派一亿现金",
+  "project": {
+    "ctgqinvestreturn3": "./src/vpages/ctgqinvestreturn3"
+  },
+  "port": "9870",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

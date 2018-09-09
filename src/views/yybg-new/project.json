@@ -1,0 +1,27 @@
+{
+  "name": "新版运营报告",
+  "value": "YYBG-NEW",
+  "directory": "yybg-new",
+  "version": "",
+  "title": "运营报告",
+  "project": {
+    "yybg-new": "./src/views/yybg-new"
+  },
+  "port": "9896",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "周定期活动",
+  "value": "ct7122InvestWeeks",
+  "directory": "ct7122InvestWeeks",
+  "version": "",
+  "title": "周定期活动",
+  "project": {
+    "ct7122InvestWeeks": "./src/vpages/ct7122InvestWeeks"
+  },
+  "port": "8070",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

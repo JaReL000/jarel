@@ -1,0 +1,27 @@
+{
+  "name": "邀请好友领牛股",
+  "value": "ct05InviteFriends_XG",
+  "directory": "ct05InviteFriends_XG",
+  "version": "",
+  "title": "邀请好友领牛股x",
+  "project": {
+    "ct05InviteFriends_XG": "./src/vpages/ct05InviteFriends_XG"
+  },
+  "port": "9019",
+  "dev": {
+    "domain": "\"https://jract.dev.jingyugame.com\"",
+    "bucket": "jyxghddev"
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jyxghdpre"
+  },
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jyxghdbeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jyxghdpro"
+  }
+}

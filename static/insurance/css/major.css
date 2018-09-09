@@ -1,0 +1,361 @@
+.job-mask{
+	height: 100%;
+    top: 0;
+    visibility: visible;
+    background-color: rgba(0,0,0,.7);
+    z-index: 12;
+}
+.js-layer-job-sharder{
+	height: 25%;
+    position: fixed;
+    width: 100%;
+}
+.job-search{
+	bottom: 0;
+    z-index: 200;
+    height: 80%;
+    background-color: #f5f5f5;
+    /*padding-top: .9rem;*/
+}
+.job-search,.job-mask{
+	position: fixed;
+    width: 100%;
+    left: 0;
+}
+.job-tt{
+	width: 100%;
+    height: 45px;
+    line-height: 45px;
+    left: 0;
+    top: 0;
+    /*position: absolute;*/
+    text-align: center;
+    background-color: #fff;
+    /*z-index: 300;*/
+}
+.job-return{
+	position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    /*z-index: 1000;*/
+    line-height: 1;
+}
+.job-return img{
+	height: 24px;
+}
+.job-tt-font{
+	font-size: 1.3rem;
+}
+
+#job-iscroll{
+	overflow: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    top: 215px;
+}
+/*.job-result{
+	position: fixed;
+    width: 100%;
+    z-index: 350;
+    top: 180px;
+}*/
+.job-input{
+	/*margin-top: 45px;*/
+	padding: 10px 10px;
+}
+.job-input-wrap{
+	background-color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    /*z-index: 300;*/
+}
+.icon-search{
+	width: 26px;
+	height: 26px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    background-image: url(../images/systemmessages/search.png.png);
+    /*z-index: 200;*/
+}
+.job-input-box{
+	position: absolute;
+    left: 45px;
+    width: 85%;
+    top: 10px;
+}
+.job-input-text{
+	position: absolute;
+    font-size: 16px;
+    width: 85%;
+    top: 0;
+    border: none;
+}
+.job-result-box{
+	background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.zylb-box{
+	position: absolute;
+	overflow: auto;
+	top: 220px;
+	bottom: 10px;
+	width: 100%;
+}
+.zylb-content{
+	padding-bottom: 15px;
+	width: 100%;
+	background-color: #fff;
+}
+.zygz-title{
+	padding-top: 20px;
+	padding-bottom: 18px;
+	color: #343434;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+.zygz-text strong{
+	color: #0099FF;
+	font-weight: normal;
+}
+.zygz-text p{
+	color: #606062;
+	font-size: 28px;
+}
+.zygz-job-item:last-child{
+	border-bottom: none;
+}
+ul.js-job-level3 li:last-child{
+	border-bottom: none;
+}
+.job-list>li{
+	padding: 5px 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+.job-list-tt{
+    padding: 5px 0;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    /*z-index: 400;*/
+}
+.zygz-job-item{
+	padding: 7px 0px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 450;
+}
+.zygz-job-item-con{
+	background-color: #fafafa;
+    padding: 0 10px;
+/*    border-top: 1px solid #e0e0e0;*/
+}
+.zygz-job-item-con li{
+	border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+    padding: 5px 0;
+    cursor: pointer;
+    position: relative;
+}
+.zygz-job-txt{
+	float: left;
+    width: 70%;
+    color: #606062;
+    font-size: 16px;
+}
+.base-color{
+	color: #4D72E2;
+	font-size: 14px;
+	color: #1d50a2;
+}
+.fr{
+	float: right;
+}
+.zygz-icon-barrow{
+	position: absolute;
+	right: 12px;
+	top: 13px;
+	width: 8px;
+	height: 12px;
+	background-image: url(../images/systemmessages/right.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.transform-icon{
+	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+	-moz-transform:rotate(90deg); /* Firefox */
+    -ms-transform:rotate(90deg); /* IE 9 */
+	-o-transform:rotate(90deg); /* Opera */
+    transform: rotate(90deg);
+}
+.fn-hide{
+	display: none!important;
+}
+.category{
+	text-align: right;
+	color: #006EF4;
+	font-size: 28px;
+}
+.zygz-job-list{
+	float: left;
+	width: 88%;
+	color: #8e8e93;
+	font-size: 16px;
+}
+.job-noresult{
+	text-align: center;
+    font-size: 18px;
+    padding: 30px;
+}
+.job-result-item{
+	border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    padding: 10px;
+}
+.f26{
+	color: #000;
+	font-size: 28px;
+}
+.f26 span{
+	float: right;
+	color: #1d50a2;
+}
+.job-iscoll{
+	position: absolute;
+	overflow: auto;
+}
+/*鏌ョ湅鑱屼笟鍒楄〃*/
+.watch-job-box{
+	position: relative;
+	overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+}
+.nofind-job{
+	margin: 15px 0;
+}
+.nofind-job p{
+	color: #0044CC;
+	text-align: center;
+	font-size: 18px;
+}
+.job-suggest{
+	margin-left: 28px;
+	margin-top: 10px;
+	width: 90%;
+	color: #0044CC;
+	font-size: 14px;
+}
+.job-telephone{
+	padding: 25px 0;
+    text-align: center;
+}
+.job-telephone a img{
+	height: 35px;
+}
+.watch-job-btn{
+	margin-top: 15px;
+}
+.job-left{
+	margin-left: 130px;
+}
+.zygz-job-name{
+	float: left;
+    width: 85%;
+    color: #333333;
+    font-size: 14px;
+}
+/*anbang*/
+.Skills-list{
+	margin-top: 25px;
+}
+.four-job-list{
+	float: left;
+    width: 88%;
+    color: #8e8e93;
+    font-size: 14px;
+}
+.Skills-list li{
+	border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+    padding: 5px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.bank-type{
+	display: none;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    max-height: 450px;
+    overflow-y: auto;
+    padding: 10px;
+    padding-top: 0;
+    min-width: 200px;
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+}
+/*鎻愮ず鏍峰紡*/
+.inform{
+	overflow: hidden;
+}
+.profession{
+	margin-top: 10px;
+	color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.occupation{
+	padding: 10px 23px 15px 23px;
+	width: 90%;
+	color: #333333;
+    font-size: 14px;
+}
+.protype{
+	color: #1d50a2;;
+    font-size: 16px;
+    font-style: normal;
+}
+/*鍜岃皭鍔犱釜鍗忚*/
+.deal .agreeTerm:checked ~ .checkbox-icon {
+    border: 1px solid #FF5044;
+    background-image: url(../../wap/images/whiteHook_icon.png);
+    background-repeat: no-repeat;
+    background-size: 0.9rem;
+    background-position: center center;
+    background-color: #FF5044;
+}
+.payment-deal {
+	padding: .3rem;
+    font-size: .24rem;
+    line-height: .34rem;
+}
+.deal-content strong {
+	font-size: .24rem;
+}
+.deal-content .m-t-20 {
+	margin-top: 0.2rem;
+}
+.deal-content span {
+	background: #ffc210;
+	color: #f4483a;
+}

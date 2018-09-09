@@ -1,0 +1,183 @@
+multi-ellipsis($lines)
+  overflow  hidden
+  text-overflow  ellipsis
+  display  -webkit-box
+  -webkit-line-clamp  $lines
+  -webkit-box-orient  vertical
+
+
+ellipsis()
+    overflow  hidden
+    white-space  nowrap
+    text-overflow  ellipsis
+
+border-1px($color)
+  position: relative
+  &:after
+    display: block
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 100%
+    border-bottom 1px /*no*/ solid $color 
+    content: ''
+
+gt()
+  position: relative
+  &:after
+    position: absolute;
+    top 40px
+    right 40px
+    content: " ";
+    display: inline-block;
+    height 16px
+    width @height
+    border-width: 4px 4px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+
+border1px($color = #e5e5e5)
+  position: relative
+  &:before
+    content ''
+    position absolute
+    height 1px
+    width 100%
+    bottom 0
+    right 0
+    background-color: $color 
+    transform:scaleY(0.5)
+    -webkit-transform:scaleY(0.5); 
+
+boder-none()
+  &:after
+    display: none
+
+border-1px($color = #ccc, $radius = 2px, $style = solid)
+  position: relative
+  &::after
+    content: ""
+    pointer-events: none
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    transform-origin: 0 0
+    border: 1px $style $color
+    border-radius: $radius
+    box-sizing border-box
+    width 100%
+    height 100%
+    @media (min-resolution: 2dppx)
+      width: 200%
+      height: 200%
+      border-radius: $radius * 2
+      transform: scale(.5) translateZ(0)
+    @media (min-resolution: 3dppx)
+      width: 300%
+      height: 300%
+      border-radius: $radius * 3
+      transform: scale(.333) translateZ(0)
+
+hide-scrollbar()
+  &::-webkit-scrollbar
+    width: 0
+    height: 0
+
+bis($url, $ext = ".png")
+  background-image: url($url + "@2x" + $ext)
+  @media (min-resolution: 3dppx)
+    background-image: url($url + "@3x" + $ext)
+
+bis1($url, $ext = ".png")
+  background: url($url + $ext) no-repeat center
+  background-size: 100% 100%
+
+rem0($px, $num = 4, $rfs = 37.5)
+  $rem = $px/$rfs
+  round($rem, $num)rem
+
+.border-top-1px, .border-right-1px, .border-bottom-1px, .border-left-1px
+  position: relative
+  &::before, &::after
+    content: ""
+    display: block
+    position: absolute
+    transform-origin: 0 0
+
+.border-top-1px
+  &::before
+    border-top: 1PX solid $color-row-line
+    left: 0
+    top: 0
+    width: 100%
+    transform-origin: 0 top
+
+.border-right-1px
+  &::after
+    border-right: 1PX solid $color-col-line
+    top: 0
+    right: 0
+    height: 100%
+    transform-origin: right 0
+
+.border-bottom-1px
+  &::after
+    border-bottom: 1PX solid $color-row-line
+    left: 0
+    bottom: 0
+    width: 100%
+    transform-origin: 0 bottom
+
+.border-left-1px
+  &::before
+    border-left: 1PX solid $color-col-line
+    top: 0
+    left: 0
+    height: 100%
+    transform-origin: left 0
+
+.cube-safe-area-pb
+  safe-area-mixin(padding-bottom, bottom, true)
+
+@media (min-resolution: 2dppx)
+  .border-top-1px
+    &::before
+      width: 200%
+      transform: scale(.5) translateZ(0)
+  .border-right-1px
+    &::after
+      height: 200%
+      transform: scale(.5) translateZ(0)
+  .border-bottom-1px
+    &::after
+      width: 200%
+      transform: scale(.5) translateZ(0)
+  .border-left-1px
+    &::before
+      height: 200%
+      transform: scale(.5) translateZ(0)
+
+@media (min-resolution: 3dppx)
+  .border-top-1px
+    &::before
+      width: 300%
+      transform: scale(.333) translateZ(0)
+  .border-right-1px
+    &::after
+      height: 300%
+      transform: scale(.333) translateZ(0)
+  .border-bottom-1px
+    &::after
+      width: 300%
+      transform: scale(.333) translateZ(0)
+  .border-left-1px
+    &::before
+      height: 300%
+      transform: scale(.333) translateZ(0)
+
+bg-image($url, $ext = ".png")
+  background-image: url($url + "@2x" + $ext)
+  @media (min-resolution: 3dppx)
+    background-image: url($url + "@3x" + $ext)

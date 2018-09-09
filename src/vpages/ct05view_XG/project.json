@@ -1,0 +1,27 @@
+{
+  "name": "观点分享",
+  "value": "ct05view_XG",
+  "directory": "ct05view_XG",
+  "version": "",
+  "title": "观点分享",
+  "project": {
+    "ct05view_XG": "./src/vpages/ct05view_XG"
+  },
+  "port": "9022",
+  "dev": {
+    "domain": "\"http://jract.dev.jingyugame.com\"",
+    "bucket": "jyxghddev"
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jyxghdpre"
+  },
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jyxghdbeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jyxghdpro"
+  }
+}

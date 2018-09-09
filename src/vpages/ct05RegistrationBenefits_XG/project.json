@@ -1,0 +1,27 @@
+{
+  "name": "选股新手注册福利",
+  "value": "ct05RegistrationBenefits_XG",
+  "directory": "ct05RegistrationBenefits_XG",
+  "version": "",
+  "title": "幸运福袋",
+  "project": {
+    "ct05RegistrationBenefits_XG": "./src/vpages/ct05RegistrationBenefits_XG"
+  },
+  "port": "9021",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jyxghddev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jyxghdpre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jyxghdbeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jyxghdpro"
+  }
+}

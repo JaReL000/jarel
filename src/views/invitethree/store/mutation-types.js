@@ -1,0 +1,8 @@
+export const CHANGEalertShareApp='CHANGEalertShareApp'
+export const CHANGEalertLog='CHANGEalertLog'
+export const CHANGEalertnoLog='CHANGEalertnoLog'
+export const CHANGEalertmes='CHANGEalertmes'
+export const CHANGEalertold='CHANGEalertold'
+export const CHANGEalertwx='CHANGEalertwx'
+export const CHANGEalertwxShare='CHANGEalertwxShare'
+export const CHANGEIsApp='CHANGEIsApp'

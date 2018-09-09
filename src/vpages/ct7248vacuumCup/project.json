@@ -1,0 +1,29 @@
+{
+  "name": "vacuum cup 3/5000  ",
+  "value": "CT7248VACUUMCUP",
+  "directory": "ct7248vacuumCup",
+  "version": "",
+  "title": "保温杯",
+  "project": {
+    "ct7248vacuumCup": "./src/vpages/ct7248vacuumCup"
+  },
+  "port": "8080",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

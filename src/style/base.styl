@@ -1,0 +1,47 @@
+body, html
+  line-height: 1
+  font-weight: 200
+  font-family: "PinFang SC", 'STHeitiSC-Light', 'helvetica-Light', arial, sans-serif
+
+.clearfix
+  display: inline-block
+  &:after
+    display: block
+    content: '.'
+    height: 0
+    line-height: 0
+    clear: both
+    visibility: hidden
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio:1.5)
+  .border-1px
+    &::after
+      -webkit-transform: scaleY(0.7)
+      transform: scaleY(0.1)
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2)
+  .border-1px
+    &::after
+      -webkit-transform: scaleY(0.5)
+      transform: scaleY(0.5)
+
+rem(val)
+  val/75rem
+
+/*动画库*/
+@keyframes dong
+  0%
+    opacity 1.0
+    transform scale(0.8) rotate(0deg)
+  33%
+    opacity 0.75
+    transform scale(1) rotate(-5deg)
+  67%
+    opacity 0.5
+    transform scale(1) rotate(5deg)
+  100%
+    opacity 1.0
+    transform scale(0.8) rotate(0deg)
+
+
+

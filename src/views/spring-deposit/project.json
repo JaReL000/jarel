@@ -1,0 +1,27 @@
+{
+  "name": "春存计划",
+  "value": "SPRING-DEPOSIT",
+  "directory": "spring-deposit",
+  "version": "",
+  "title": "春存计划",
+  "project": {
+    "spring-deposit": "./src/views/spring-deposit"
+  },
+  "port": "9016",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

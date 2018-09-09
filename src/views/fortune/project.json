@@ -1,0 +1,27 @@
+{
+  "name": "活动-算命",
+  "value": "FORTUNE",
+  "directory": "fortune",
+  "version": "",
+  "title": "活动",
+  "project": {
+    "fortune": "./src/views/fortune"
+  },
+  "port": "9894",
+  "dev": {
+    "domain": "\"http://jinrpc.dev.jinr.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jinrpc.pre.jinr.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jinrpc.beta.jinr.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jinr.com\"",
+    "bucket": "jinrfe"
+  }
+}

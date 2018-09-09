@@ -1,0 +1,27 @@
+{
+  "name": "Vue 测试",
+  "value": "VUE",
+  "directory": "vue",
+  "version": "",
+  "title": "jinr",
+  "project": {
+    "app": "./src/views/app"
+  },
+  "port": "8999",
+  "dev": {
+    "domain": "\"http://jinrpc.dev.jinr.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jinrpc.pre.jinr.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jinrpc.beta.jinr.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jinr.com\"",
+    "bucket": "jinrfe"
+  }
+}

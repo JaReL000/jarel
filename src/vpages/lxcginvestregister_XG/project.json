@@ -1,0 +1,29 @@
+{
+  "name": "选股1元购投资计划",
+  "value": "LXCGINVESTREGISTER_XG",
+  "directory": "lxcginvestregister_XG",
+  "version": "",
+  "title": "1元购投资计划",
+  "project": {
+    "lxcginvestregister_XG": "./src/vpages/lxcginvestregister_XG"
+  },
+  "port": "9631",
+  "dev": {
+    "domain": "\"http://jract.dev.jingyugame.com\"",
+    "bucket": "jyxghddev"
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jyxghdpre"
+  },
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jyxghdbeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jyxghdpro"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

@@ -1,0 +1,27 @@
+{
+  "name": "投多少送多少3",
+  "value": "INVESTDOUBLE3",
+  "directory": "investdouble3",
+  "version": "",
+  "title": "投多少送多少",
+  "project": {
+    "investdouble3": "./src/views/investdouble3"
+  },
+  "port": "9017",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

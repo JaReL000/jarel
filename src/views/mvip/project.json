@@ -1,0 +1,27 @@
+{
+  "name": "M站-大客户版本(年定期)",
+  "value": "MVIP",
+  "directory": "",
+  "version": "",
+  "title": "鲸鱼",
+  "project": {
+    "mvip": "./src/views/mvip"
+  },
+  "port": "8988",
+  "dev": {
+    "domain": "\"http://jinrpc.dev.jinr.com\"",
+    "bucket": "jinrvipdev"
+  },
+  "pre": {
+    "domain": "\"http://jinrpc.pre.jinr.com\"",
+    "bucket": "jinrvippre"
+  },
+  "beta": {
+    "domain": "\"http://jinrpc.beta.jinr.com\"",
+    "bucket": "jinrvipbeta"
+  },
+  "prod": {
+    "domain": "\"http://jinr.com\"",
+    "bucket": "jinrvip"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "0元购",
+  "value": "ct7122zeroYuanBuy",
+  "directory": "ct7122zeroYuanBuy",
+  "version": "",
+  "title": "0元购",
+  "project": {
+    "ct7122zeroYuanBuy": "./src/vpages/ct7122zeroYuanBuy"
+  },
+  "port": "8078",
+  "dev": {
+    "domain": "\"http://jract.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

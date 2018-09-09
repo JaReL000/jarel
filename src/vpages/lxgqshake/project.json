@@ -1,0 +1,27 @@
+{
+  "name": "摇一摇红包活动",
+  "value": "LXGQSHAKE",
+  "directory": "lxgqshake",
+  "version": "",
+  "title": "微信支付摇摇乐",
+  "project": {
+    "lxgqshake": "./src/vpages/lxgqshake"
+  },
+  "port": "9876",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

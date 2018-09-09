@@ -1,0 +1,27 @@
+{
+  "name": "新手福利",
+  "value": "NEWHB",
+  "directory": "newhb",
+  "version": "",
+  "title": "新手福利",
+  "project": {
+    "newhb": "./src/views/newhb"
+  },
+  "port": "9895",
+  "dev": {
+    "domain": "\"http://jinrapp.dev.jinr.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jinrapp.pre.jinr.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jinrapp.beta.jinr.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jinrapp.jinr.com\"",
+    "bucket": "jinrfe"
+  }
+}

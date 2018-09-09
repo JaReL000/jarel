@@ -1,0 +1,27 @@
+{
+  "name": "智投",
+  "value": "ZHITOU",
+  "directory": "zhitou",
+  "version": "",
+  "title": "智投",
+  "project": {
+    "zhitou": "./src/views/zhitou"
+  },
+  "port": "8005",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

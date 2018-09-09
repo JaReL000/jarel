@@ -1,0 +1,27 @@
+{
+  "name": "鲸鱼贷",
+  "value": "Jyd",
+  "directory": "Jyd",
+  "version": "",
+  "title": "鲸鱼贷",
+  "project": {
+    "Jyd": "./src/vpages/Jyd"
+  },
+  "port": "9024",
+  "dev": {
+    "domain": "\"http://192.168.29.67:9001\"",
+    "bucket": "jyxghddev"
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jyxghdpre"
+  },
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jyxghdbeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jyxghdpro"
+  }
+}

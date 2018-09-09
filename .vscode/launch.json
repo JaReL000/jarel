@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "app",
+      "runtimeExecutable": "yarn",
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "port": 9200
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "so",
+      "protocol": "inspector",
+      "program": "${workspaceRoot}\\config\\project.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "node工程",
+      // "protocol": "auto",  // inspector
+      "program": "${workspaceRoot}\/src\/jinr-sdk\/index.js"
+      // "program": "${workspaceRoot}\/build\/dev-server.js"
+    }
+  ]
+}

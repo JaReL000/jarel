@@ -1,0 +1,27 @@
+{
+  "name": "亿万红包大派送_node",
+  "value": "ct05hundredMillionNode",
+  "directory": "ct05hundredMillionNode",
+  "version": "",
+  "title": "亿万红包大派送",
+  "project": {
+    "ct05hundredMillionNode": "./src/vpages/ct05hundredMillionNode"
+  },
+  "port": "9019",
+  "dev": {
+    "domain": "\"http://jract.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "回流短信领券活动",
+  "value": "YDGQHLOLDUSER1",
+  "directory": "ydgqhlolduser1",
+  "version": "",
+  "title": "感谢有你",
+  "project": {
+    "ydgqhlolduser1": "./src/vpages/ydgqhlolduser1"
+  },
+  "port": "9860",
+  "dev": {
+    "domain": "\"http://hbnew.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://hbnew.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://hbnew.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://hbnew.jingyugame.com\"",
+    "bucket": "jinrfe"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

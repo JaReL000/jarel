@@ -1,0 +1,27 @@
+{
+  "name": "APP交互方法",
+  "value": "ct05Test",
+  "directory": "ct05Test",
+  "version": "",
+  "title": "APP交互方法",
+  "project": {
+    "ct05Test": "./src/vpages/ct05Test"
+  },
+  "port": "9020",
+  "dev": {
+    "domain": "\"http://jract.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jinrfe"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cut-组件开发测试版1.0",
+  "value": "CUT",
+  "directory": "cut",
+  "version": "",
+  "title": "cut 组件开发测试版",
+  "project": {
+    "cut": "./src/views/cut"
+  },
+  "port": "9000",
+  "dev": {
+    "domain": "\"http://jinrpc.dev.jinr.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jinrpc.pre.jinr.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jinrpc.beta.jinr.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jinr.com\"",
+    "bucket": "jinrfe"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "保险箱日增息",
+  "value": "CTGQYEARINVEST",
+  "directory": "ctgqyearinvest",
+  "version": "",
+  "title": "一键转入年定期福利",
+  "project": {
+    "ctgqyearinvest": "./src/vpages/ctgqyearinvest"
+  },
+  "port": "9784",
+  "dev": {
+    "domain": "\"http://jract.dev.jingyugame.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jinrfe"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

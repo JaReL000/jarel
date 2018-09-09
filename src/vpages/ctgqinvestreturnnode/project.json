@@ -1,0 +1,29 @@
+{
+  "name": "投资返现node版1",
+  "value": "CTGQINVESTRETURNNODE",
+  "directory": "ctgqinvestreturnnode",
+  "version": "",
+  "title": "激情盛夏立享返现",
+  "project": {
+    "ctgqinvestreturnnode": "./src/vpages/ctgqinvestreturnnode"
+  },
+  "port": "9565",
+  "dev": {
+    "domain": "\"http://jract.dev.jingyugame.com\"",
+    "bucket": "jinrfedev" 
+  },
+  "pre": {
+    "domain": "\"http://jract.pre.jingyugame.com\"",
+    "bucket": "jinrfepre"
+  }, 
+  "beta": {
+    "domain": "\"http://jract.beta.jingyugame.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jract.jingyugame.com\"",
+    "bucket": "jinrfe"
+  },
+  "proxy": "",
+  "arrAPI": []
+}

@@ -1,0 +1,36 @@
+// @import "./mixins/border_retina.styl"
+
+.jinr-hairline 
+  &,
+  &--top,
+  &--left,
+  &--right,
+  &--bottom,
+  &--top-bottom,
+  &--surround 
+    position: relative;
+    &::after 
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      transform: scale(.5);
+      transform-origin: 0 0;
+      pointer-events: none;
+      box-sizing: border-box;
+      border: 0px solid #e4e4e4;
+  &--top::after 
+    border-top-width: 1px;
+  &--left::after 
+    border-left-width: 1px;
+  &--right::after 
+    border-right-width: 1px;
+  &--bottom::after 
+    border-bottom-width: 1px;
+  &--top-bottom::after 
+    border-width: 1px 0;
+  &--surround::after 
+    border-width: 1px;
+  

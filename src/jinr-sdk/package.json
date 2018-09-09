@@ -1,0 +1,47 @@
+{
+  "name": "jinr-sdk",
+  "version": "0.0.4",
+  "description": "交互方式",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:prod": "cross-env NODE_ENV=production webpack --config build/webpack.prod.js"
+  },
+  "keywords": [
+    "jinr",
+    "sdk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JinrFE/jinr-sdk.git"
+  },
+  "author": "weizihua <weizihuaing@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JinrFE/jinr-sdk/issues"
+  },
+  "homepage": "https://github.com/JinrFE/jinr-sdk#readme",
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "deep-assign": "^2.0.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.6.2",
+    "vue": "^2.5.13",
+    "vue-loader": "^11.3.3",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^3.0.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.5.6",
+    "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-dev-server": "^2.9.7"
+  }
+}

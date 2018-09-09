@@ -1,0 +1,27 @@
+{
+  "name": "APP-内嵌页4.0",
+  "value": "APP",
+  "directory": "app",
+  "version": "4.0",
+  "title": "jinr",
+  "project": {
+    "app": "./src/views/app"
+  },
+  "port": "8999",
+  "dev": {
+    "domain": "\"http://jinrapp.dev.jinr.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jinrapp.pre.jinr.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jinrapp.beta.jinr.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jinrapp.jinr.com\"",
+    "bucket": "jinrfe"
+  }
+}

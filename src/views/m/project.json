@@ -1,0 +1,29 @@
+{
+  "name": "M站-重构3.0版本",
+  "value": "M",
+  "directory": "",
+  "version": "",
+  "title": "鲸鱼",
+  "project": {
+    "m": "./src/views/m"
+  },
+  "port": "8995",
+  "dev": {
+    "domain": "\"http://jinrpc.dev.jinr.com\"",
+    "bucket": "jinrfedev"
+  },
+  "pre": {
+    "domain": "\"http://jinrpc.pre.jinr.com\"",
+    "bucket": "jinrfepre"
+  },
+  "beta": {
+    "domain": "\"http://jinrpc.beta.jinr.com\"",
+    "bucket": "jinrfebeta"
+  },
+  "prod": {
+    "domain": "\"http://jinr.com\"",
+    "bucket": "jinrfe"
+  },
+  "proxy": "http://jinrpc.dev.jinr.com",
+  "arrAPI": ["m/index"]
+}
